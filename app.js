@@ -91,7 +91,7 @@ app.get('/api/artists', function(request, response) {
         });
       }
 
-    });
+    }); 
 
 
     app.listen(process.env.PORT || 8000);

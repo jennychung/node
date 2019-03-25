@@ -98,6 +98,7 @@ app.get('/api/artists', function(request, response) {
 
 });
 
+
 app.get('/api/tracks/:id', function(request, response) {
   let {
     id
@@ -116,7 +117,7 @@ app.get('/api/tracks/:id', function(request, response) {
 
 // response.status(200).send();
 
-app.post('/api/tracks/:id', function(request, response) {
+app.patch('/api/tracks/:id', function(request, response) {
     let {id} = request.params;
     Track
       .findByPk(id)
